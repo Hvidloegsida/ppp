@@ -1,9 +1,16 @@
 ---
 import MainLayout from "../layouts/MainLayout.astro";
 import Button from '../components/Button.astro';
+import Link from '../components/Link.astro'
 ---
 <MainLayout title="Titel">
-	<article>
-		<p>Index indhold</p>
-	</article>
+	<section class="flex flex-col">
+	<Link overskrift="THE KORNER" imgSrc="/img1.png" alt="The korner" roller="Roller: Prototype, illustrator, designer" link="https://the-korner.netlify.app/" ></Link>
+
+	<Link overskrift="PIXEL SPIL" imgSrc="/img2.png" alt="Pixel spil	" roller="Roller: Koncept designer, illustrator, kode" link="https://hvidloegsidapixelgame.netlify.app/spil"></Link>
+
+
+	<Link overskrift="DIGITAL CLEANUP DAY" imgSrc="/img3.png" alt="Digital cleanup day" roller="Roller: Prototype, designer, infografik, kode" link="https://digital-cleanup.netlify.app/" ></Link>
+</section>
 </MainLayout>
+
