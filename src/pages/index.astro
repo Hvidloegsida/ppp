@@ -2,15 +2,43 @@
 import MainLayout from "../layouts/MainLayout.astro";
 import Button from '../components/Button.astro';
 import Link from '../components/Link.astro'
+import Hero from "../components/Hero.astro";
 ---
 <MainLayout title="Titel">
-	<section class="flex flex-col">
+	<Hero></Hero>
+<section class="flex flex-col">
 	<Link overskrift="THE KORNER" imgSrc="/img1.png" alt="The korner" roller="Roller: Prototype, illustrator, designer" link="https://the-korner.netlify.app/" ></Link>
 
 	<Link overskrift="PIXEL SPIL" imgSrc="/img2.png" alt="Pixel spil	" roller="Roller: Koncept designer, illustrator, kode" link="https://hvidloegsidapixelgame.netlify.app/spil"></Link>
 
 
 	<Link overskrift="DIGITAL CLEANUP DAY" imgSrc="/img3.png" alt="Digital cleanup day" roller="Roller: Prototype, designer, infografik, kode" link="https://digital-cleanup.netlify.app/" ></Link>
+</section>
+<section class="flex flew-row justify-center items-center mx-10">
+	<img src="/img4.png" alt="Ida Mikkelsen" class="w-24">
+	<p class="font-big text-white">Kreativ kvinde på 24 år som er frisk på at dykke dybere ned i den grafiske verden.
+	Jeg går på KEA multimediedesign.
+	</p>
+</section>
+<section>
+	<section class="border-solid border-pink border-4 rounded-md mx-10">
+		<h1 class="text-lilla bg-pink py-3 font-good justify-center itemns-center flex">Sociale medier</h1>
+		<div class="flex flex-row space-x-6 justify-center items-center">
+		<a href="mailto:niji.ida@hotmail.com" class="flex flex-col justify-center items-center">
+			<img src="/mail.png" alt="email" class="w-24">
+			<p class="text-white font-big">niji.ida@hotmail.com</p>
+		</a>
+		<a href="www.linkedin.com/in/idamikkelsenniji" class="flex flex-col justify-center items-center">
+			<img src="/linkedin.png" alt="Linkedin" class="w-24">
+			<p class="text-white font-big">www.linkedin.com/in/idamikkelsenniji</p>
+		</a>
+		<a href="https://www.instagram.com/niji.ida" class="flex flex-col justify-center items-center">
+			<img src="/instagram.png" alt="Instagram" class="w-24">
+			<p class="text-white font-big">niji.ida</p>
+		</a>
+	</div>
+	</section>
+	<h2 class="font-big text-white text-center">Føler du for et samarbejde, så kontakt mig gerne!</h2>
 </section>
 </MainLayout>
 
