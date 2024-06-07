@@ -1,46 +1,94 @@
-<div id="scroll-container" class="bg-white">
-    <div id="scroll-text" class="font-good text-lilla" >DESIGN DESIGN DESIGN<div>
-  </div>
+<div class="banner bg-white">
+    <div class="track">
+        <div class="content">
+            DESIGN&nbsp;&nbsp;&nbsp;
+            DESIGN&nbsp;&nbsp;&nbsp;
+            DESIGN&nbsp;&nbsp;&nbsp;
+            DESIGN&nbsp;&nbsp;&nbsp;
+            DESIGN&nbsp;&nbsp;&nbsp;
+            DESIGN&nbsp;&nbsp;&nbsp;
+            DESIGN&nbsp;&nbsp;&nbsp;
+            DESIGN&nbsp;&nbsp;&nbsp;
+            DESIGN&nbsp;&nbsp;&nbsp;
+            DESIGN&nbsp;&nbsp;&nbsp;
+            DESIGN&nbsp;&nbsp;&nbsp;
+        </div>
+    </div>
+</div>
 
-
-  <style>
-
-#scroll-container {
-  overflow: hidden;
-}
-
-#scroll-text {
-  /* animation properties */
-  -moz-transform: translateX(100%);
-  -webkit-transform: translateX(100%);
-  transform: translateX(100%);
-  
-  -moz-animation: my-animation 15s linear infinite;
-  -webkit-animation: my-animation 15s linear infinite;
-  animation: my-animation 15s linear infinite;
-}
-
-/* for Firefox */
-@-moz-keyframes my-animation {
-  from { -moz-transform: translateX(100%); }
-  to { -moz-transform: translateX(-100%); }
-}
-
-/* for Chrome */
-@-webkit-keyframes my-animation {
-  from { -webkit-transform: translateX(100%); }
-  to { -webkit-transform: translateX(-100%); }
-}
-
-@keyframes my-animation {
-  from {
-    -moz-transform: translateX(100%);
-    -webkit-transform: translateX(100%);
-    transform: translateX(100%);
+<style>
+  .banner {
+    position: relative;
+    width: 100px;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
-  to {
-    -moz-transform: translateX(-100%);
-    -webkit-transform: translateX(-100%);
-    transform: translateX(-100%);
-  }}
+
+  .track {
+    position: absolute;
+    will-change: transform;
+    animation: banner 10s linear infinite;
+  }
+
+  .content {
+    display: inline-block;
+    white-space: nowrap;
+    writing-mode: vertical-rl;
+    transform: rotate(360deg);
+  }
+
+  @keyframes banner {
+    from {
+      transform: translateY(-100%);
+    }
+    to {
+      transform: translateY(100%);
+    }
+  }
+</style>
+
+
+
+
+
+
+
+<!-- <div class="banner bg-white">
+    <div class="track">
+      <div class="content">&nbsp;DESIGN&nbsp;&nbsp;&nbsp; *&nbsp;&nbsp;&nbsp;DESIGN &nbsp;&nbsp;&nbsp;* &nbsp;&nbsp;&nbsp;DESIGN &nbsp;&nbsp;&nbsp;*&nbsp;&nbsp;&nbsp;DESIGN *&nbsp;&nbsp;&nbsp;DESIGN&nbsp;&nbsp;&nbsp; *&nbsp;&nbsp;&nbsp; DESIGN *&nbsp;&nbsp;&nbsp;DESIGN&nbsp;&nbsp;&nbsp; *&nbsp;&nbsp;&nbsp; DESIGN*&nbsp;&nbsp;&nbsp;DESIGN&nbsp;&nbsp;&nbsp; *&nbsp;&nbsp;&nbsp;DESIGN *</div>
+    </div>
+
+</div>
+
+  
+    <style>
+      .banner {
+        position: relative;
+        width: 100vw;
+        max-width: 100%;
+        height: 100px;
+        overflow-x: hidden;
+        display: flex;
+        align-items: center;
+      }
+  
+      .track {
+        position: absolute;
+        white-space: nowrap;
+        will-change: transform;
+        animation: banner 10s linear infinite;
+      }
+  
+      @keyframes banner {
+        from {
+          transform: translateX(0);
+        }
+        to {
+          transform: translateX(-50%);
+        }
+      }
     </style>
+  </div> -->
