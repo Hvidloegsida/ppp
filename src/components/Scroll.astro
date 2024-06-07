@@ -1,0 +1,107 @@
+<div id="scroll-container" class="bg-white">
+    <div id="scroll-text" class="font-good text-lilla">DESIGN DESIGN DESIGN</div>
+</div>
+
+<style>
+#scroll-container {
+  overflow: hidden;
+  height: 100vh; /* Adjust height as needed */
+  width: auto;
+}
+
+#scroll-text {
+  /* Animation properties */
+  -moz-transform: translateY(100%);
+  -webkit-transform: translateY(100%);
+  transform: translateY(100%);
+  
+  -moz-animation: my-animation 15s linear infinite;
+  -webkit-animation: my-animation 15s linear infinite;
+  animation: my-animation 15s linear infinite;
+  
+  /* Text orientation */
+  writing-mode: vertical-rl; /* Vertical text orientation */
+  text-orientation: upright; /* Keeps the text upright */
+  white-space: nowrap; /* Prevents line breaks */
+}
+
+/* For Firefox */
+@-moz-keyframes my-animation {
+  from { -moz-transform: translateY(100%); }
+  to { -moz-transform: translateY(-100%); }
+}
+
+/* For Chrome */
+@-webkit-keyframes my-animation {
+  from { -webkit-transform: translateY(100%); }
+  to { -webkit-transform: translateY(-100%); }
+}
+
+@keyframes my-animation {
+  from {
+    -moz-transform: translateY(100%);
+    -webkit-transform: translateY(100%);
+    transform: translateY(100%);
+  }
+  to {
+    -moz-transform: translateY(-100%);
+    -webkit-transform: translateY(-100%);
+    transform: translateY(-100%);
+  }
+}
+</style>
+
+
+
+
+
+
+
+
+
+<!-- <div id="scroll-container" class="bg-white">
+    <div id="scroll-text" class="font-good text-lilla" >DESIGN DESIGN DESIGN<div>
+  </div>
+
+
+  <style>
+
+#scroll-container {
+  overflow: hidden;
+}
+
+#scroll-text {
+  /* animation properties */
+  -moz-transform: translateX(100%);
+  -webkit-transform: translateX(100%);
+  transform: translateX(100%);
+  
+  -moz-animation: my-animation 15s linear infinite;
+  -webkit-animation: my-animation 15s linear infinite;
+  animation: my-animation 15s linear infinite;
+}
+
+/* for Firefox */
+@-moz-keyframes my-animation {
+  from { -moz-transform: translateX(100%); }
+  to { -moz-transform: translateX(-100%); }
+}
+
+/* for Chrome */
+@-webkit-keyframes my-animation {
+  from { -webkit-transform: translateX(100%); }
+  to { -webkit-transform: translateX(-100%); }
+}
+
+@keyframes my-animation {
+  from {
+    -moz-transform: translateX(100%);
+    -webkit-transform: translateX(100%);
+    transform: translateX(100%);
+  }
+  to {
+    -moz-transform: translateX(-100%);
+    -webkit-transform: translateX(-100%);
+    transform: translateX(-100%);
+  }}
+    </style> -->
