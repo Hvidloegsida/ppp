@@ -28,7 +28,7 @@ const { title } = Astro.props;
 		<header>
 		</header>
 		
-		<main class="ml-[12%]">
+		<main class="ml-[12%] backg">
 			<Scroll />
 			<div> 
 			<slot />
@@ -41,4 +41,12 @@ const { title } = Astro.props;
 			
 	</body>
 </html>
+
+
+
+<style>
+	.backg {
+	background: rgb(125,95,148);
+background: linear-gradient(180deg, rgba(125,95,148,1) 2%, rgba(38,29,46,1) 100%);}
+</style>
 
