@@ -42,6 +42,7 @@
 .track {
   position: absolute; /* Change to absolute to fix the positioning */
   will-change: transform;
+  -webkit-animation: banner 20s linear infinite; /* For Safari */
   animation: banner 20s linear infinite;
 }
 
@@ -49,14 +50,28 @@
   display: inline-block;
   white-space: nowrap;
   writing-mode: vertical-rl;
+  -webkit-transform: rotate(360deg); /* For Safari */
   transform: rotate(360deg);
+}
+
+@-webkit-keyframes banner { /* For Safari */
+  from {
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+  }
+  to {
+    -webkit-transform: translateY(0%);
+    transform: translateY(0%);
+  }
 }
 
 @keyframes banner {
   from {
+    -webkit-transform: translateY(-50%);
     transform: translateY(-50%);
   }
   to {
+    -webkit-transform: translateY(0%);
     transform: translateY(0%);
   }
 }
