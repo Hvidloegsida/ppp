@@ -3,12 +3,24 @@ import Box from "../components/Box.astro"
 ---
 <section class="flex flex-col items-center justify-center min-h-screen md:flex-row">
     <div class="flex flex-row md:flex-col-reverse items-center justify-center ml-[15%]">
-        <img src="/mig.png" alt="Image" class="w-56 h-auto mr-auto ml-[15%] sm:mx-0 md:mr-4 md:-ml-[40%]">
+        <img src="/mig.png" alt="Image" class="w-56 h-auto mr-auto ml-[15%] sm:mx-0 md:mr-4 md:-ml-[40%] md:w-[30rem]">
 
-        <h1 class="font-good text-pink -ml-[27%] text-5xl mb-[11rem] leading-[4.5rem] transform rotate-90 md:rotate-0 md:-translate-x-0 md:flex md:flex-col md:mb-4">
+        <h1 class="font-good text-pink -ml-[27%] text-5xl mb-[11rem] leading-[4.5rem] transform rotate-90 md:rotate-0 md:-translate-x-0 md:flex md:flex-col md:mb-4 md:text-[90px] md:items-center md:justify-center lg:text-[120px]">
             IDA <span class="ml-[3.8rem] sm:ml-0">MIKKELSEN</span>
         </h1>
     </div>
   
     <Box></Box>
 </section>
+
+
+
+<style>
+    @media (min-width: 768px) { /* assuming md is 768px */
+    h1 {
+        margin-left: 0;
+        margin-right: 0;
+        text-align: center;
+    }
+}
+</style>
