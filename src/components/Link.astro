@@ -3,9 +3,9 @@ const {overskrift, imgSrc, roller, alt, link } = Astro.props;
 ---
 
 
-<section class="border-solid border-pink border-4 rounded-md  text-center mb-7 mx-10  my-6">
-    <h1 class="text-lilla bg-pink py-3 font-good">{overskrift}</h1>
+<section class="border-solid border-pink border-4 rounded-md  text-center mb-7 mx-10  my-6 md:mx-44">
+    <h1 class="text-lilla bg-pink py-3 font-good md:text-[50px]">{overskrift}</h1>
     <a href={link}> <img class="border-solid border-lilla border-2" src={imgSrc} alt={alt}>
 </a>
-    <h2 class="text-lilla bg-pink py-2 font-big text-left indent-2">{roller}</h2>
+    <h2 class="text-lilla bg-pink py-2 font-big text-left indent-2 md:text-[50px]">{roller}</h2>
 </section>
