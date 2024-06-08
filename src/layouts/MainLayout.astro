@@ -28,7 +28,7 @@ const { title } = Astro.props;
 		<header>
 		</header>
 		
-		<main class="flex flex-row">
+		<main class="flex flex-cols">
 			<Scroll />
 			<div> 
 			<slot />
@@ -42,11 +42,3 @@ const { title } = Astro.props;
 	</body>
 </html>
 
-<!-- 
-<style>
-
-	body {
-		background: rgb(125,95,148);
-background: linear-gradient(180deg, rgba(125,95,148,1) 0%, rgba(38,29,46,1) 100%);
-		}
-</style> -->
