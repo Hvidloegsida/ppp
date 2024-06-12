@@ -1,0 +1,9 @@
+---
+const {overskrift, imgSrc, alt, text } = Astro.props;
+---
+
+<section class="border-solid border-pink border-4 rounded-xl  text-center mb-7 mx-10  my-6 md:mx-32 xl:mx-44">
+    <h2 class="text-lilla bg-pink py-3 font-good md:text-[20px] xl:text-[50px]">{overskrift}</h2>
+    <img class="border-solid border-lilla border-2" src={imgSrc} alt={alt}>
+    <h3 class="text-lilla pl-2 bg-pink py-2 font-big text-left md:text-[20px] xl:text-[50px]">{text}</h3>
+</section>
