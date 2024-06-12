@@ -1,12 +1,11 @@
 ---
 import MainLayout from "../layouts/MainLayout.astro"
 import Gallerygrid from "../components/Gallerygrid.astro"
+import Tilbage from "../components/Tilbage.astro"
 ---
 <MainLayout title="Gallry">
-    <nav class="flex pt-10 mx-[2.5rem]">
-   <a class="" href="/"><img class="h-auto w-[3rem] jello-horizontal" src="/pil.png" alt="tilbageknap"></a>
-    </nav>
-    <h1 class="font-good text-pink text-5xl pb-[3rem] mt-[2rem] flex justify-center items-center ">Galleri</h1>
+  <Tilbage></Tilbage>
+    <h1 class="font-good text-pink text-5xl pb-[3rem] mt-[2rem] flex justify-center items-center lg:text-[4.5rem] xl:text-[4.5rem] ">Galleri</h1>
 
 <Gallerygrid></Gallerygrid>
 
@@ -94,5 +93,43 @@ import Gallerygrid from "../components/Gallerygrid.astro"
             transform: scale3d(1, 1, 1);
   }
 }
+
+
+
+
+
+
+
+¨
+/* Default state for .slide */
+.slide {
+  box-shadow: inset 0 0 0 0 #FBC7C7;
+  color: #FBC7C7; /* Preserve the original text color */
+  transition: box-shadow 0.25s, color 0.25s; /* Ensure the transition is applied */
+}
+
+/* Animation for .slide:hover and .slide:focus */
+.slide:hover,
+.slide:focus {
+  box-shadow: inset 20em 0 0 0 #FBC7C7;
+  color: #5B466C; /* Change the text color when hovered */
+}
+
+/* Basic button styles */
+button {  
+  color: #FBC7C7;
+  transition: 0.25s;
+  border: 2px solid;
+  font: inherit;
+  padding: 1em 2em;
+}
+
+/* Button hover and focus styles */
+button:hover,
+button:focus { 
+  border-color: #FBC7C7;
+  color: #fff;
+}
+
 
 </style>

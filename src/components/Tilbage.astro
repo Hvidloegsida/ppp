@@ -1,0 +1,26 @@
+<nav class="flex pt-10 mx-[2.5rem]">
+    <a class="slide" href="/" >
+      <img id="svgImg" class="h-auto w-[3rem] default-svg" src="/tegn.svg" alt="tilbageknap" />
+    </a>
+  </nav>
+
+
+  <style>
+    /* Define the default background image */
+    .slide {
+      background-image: url('/tegn.svg'); /* Set the default SVG */
+      background-repeat: no-repeat;
+      background-size: contain; /* Ensure the SVG fills the container */
+      display: inline-block; /* Ensures the link takes up only the space it needs */
+      width: 3rem; /* Set the width of the link */
+      height: 3rem; /* Set the height of the link */
+ /* Smooth transition when background image changes */
+    }
+  
+    /* Change the background image when hovered */
+    .slide:hover {
+      background-image: url('/pil2.svg'); /* Set the hover SVG */
+            transition: background-image 0.25s;
+    }
+  </style>
+  

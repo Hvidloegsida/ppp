@@ -1,4 +1,13 @@
-<a class="text-pink rounded-xl border-4 border-solid border-pink py-3 font-good md:text-[20px] xl:text-[50px] mb-7 mx-10 my-6 md:mx-32 xl:mx-44 xl:mb-[12rem] text-center slide" href="/gallery">Galleri</a>
+---
+const {link } = Astro.props;
+---
+
+
+<div class="flex items-center justify-center">
+<a class="text-pink rounded-xl border-4 px-4 border-solid border-pink py-3 font-good md:text-[20px] xl:text-[50px] mb-7 mx-10 my-6 md:mx-32 xl:mx-44 xl:mb-[12rem] text-center slide" href={link}><slot /></a>
+</div>
+
+
 
 <style>
 /* Default state for .slide */

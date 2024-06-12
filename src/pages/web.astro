@@ -1,32 +1,26 @@
 ---
-import MainLayout from "../layouts/MainLayout.astro";
-import Button from '../components/Button.astro';
-import Link from '../components/Link.astro'
-import Hero from "../components/Hero.astro";
-import Some from "../components/Some.astro"
+import MainLayout from "../layouts/MainLayout.astro"
+import Link from "../components/Link.astro"
+import Tilbage from "../components/Tilbage.astro";
 ---
-<MainLayout title="Portfolie">
-	<Hero></Hero>
-<section class="flex flex-col mt-16 xl:mt-32">
-<Button link="/gallery">GRAFISK DESIGN</Button>
-<Button link="/web">WEBDEVELOPMENT</Button>
-
-
-
-
-</section>
-<section class="flex flew-row justify-center items-center mx-10 mt-14">
-	<img src="/img4.png" alt="Ida Mikkelsen" class="w-[10rem] h-auto mr-4 md:w-[15rem] xl:w-[30rem]">
-	<p class="font-big text-white text-center md:text-[20px] xl:text-[50px]">Kreativ kvinde på 24 år som er frisk på at dykke dybere ned i den grafiske verden.
-	Jeg går på KEA multimediedesign.
-	</p>
-</section>
-<Some></Some>
-<section class="mt-10 pb-14">
-	
-	<h2 class="font-big text-white text-center md:text-[20px] xl:text-[50px]">Føler du for et samarbejde, så kontakt mig gerne!</h2>
-</section>
+<MainLayout title="Webdevelopment">
+<Tilbage></Tilbage>
+  <section class="font-good text-pink text-4xl flex flex-col xl:flex-row justify-center items-center lg:text-[4.5rem] xl:text-[4.5rem]  xl:gap-7 ">
+    <p>WEB -</p>
+    <p >DEVELOPMENT</p>
+   
+  </section>
+   <section class="flex flex-col mt-8 pb-14">
+    
+            <Link overskrift="THE KORNER" imgSrc="/img1.png" alt="The korner" roller="Roller: Prototype, illustrator, designer" link="https://the-korner.netlify.app/" ></Link>
+        
+            <Link overskrift="PIXEL SPIL" imgSrc="/img2.png" alt="Pixel spil	" roller="Roller: Koncept designer, illustrator, kode" link="https://hvidloegsidapixelgame.netlify.app/spil"></Link>
+        
+        
+            <Link overskrift="DIGITAL CLEANUP DAY" imgSrc="/img3.png" alt="Digital cleanup day" roller="Roller: Prototype, designer, infografik, kode" link="https://digital-cleanup.netlify.app/" ></Link>
+        </section>
 </MainLayout>
+
 
 
 <style>
@@ -111,4 +105,9 @@ import Some from "../components/Some.astro"
 }
 
 
+
+
 </style>
+
+
+
